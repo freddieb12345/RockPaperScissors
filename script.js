@@ -11,9 +11,9 @@ window.alert("The computer chose " + computerChoice);
 //Compare the userInput to the computerChoice and decide who wins by setting rules.
 //Also need to create variables to tally how many wins draws and losses you have
 //Wins
-var Wins =0;
-var Draws =0;
-var Losses =0;
+var userWins =0;
+var userDraws =0;
+var userLosses =0;
 
 if (userInput === "R" && computerChoice === "S") {
     window.alert("You win");
@@ -45,3 +45,6 @@ if (userInput === computerChoice) {
     window.alert("Draw");
     userDraws ++;
 }
+
+//Alert that shows your stats with a button on it that resets all the initial variables (not the tally), allowing for the game to restart
+window.confirm ("Stats:\n" + "Wins = " + userWins + "\nDraws = " + userDraws  + "\nLosses = " + userLosses);
